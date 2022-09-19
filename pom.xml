@@ -6,7 +6,7 @@
 
   <groupId>org.algo</groupId>
   <artifactId>algorithms</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>algorithms</name>
 
   <properties>
