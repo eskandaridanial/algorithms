@@ -10,7 +10,7 @@ import java.util.List;
  * author: doneskandari@gmail.com
  * date: 9/5/22 - 6:01 PM
  */
-public class SelectionSort {
+public class BubbleSort {
 
    public static List<int[]> compare(int[]... arrays) {
         List<int[]> result = new ArrayList<>();
@@ -27,14 +27,15 @@ public class SelectionSort {
     }
 
     public static int[] sort(int[] array){
-       int temp;
-        for (int i = 0 ; i < array.length ; i++) {
-            for (int j = i + 1 ; j < array.length ; j++) {
-                if (array[j] < array[i]) {
-                    temp = array[j];
-                    array[j] = array[i];
-                    array[i] = temp;
+        int temp;
+        for(int i = 0 ; i < array.length ; i++){
+            for(int j = 1 ; j < array.length - i ; j++){
+                if(array[j-1] > array[j]){
+                    temp = array[j-1];
+                    array[j-1] = array[j];
+                    array[j] = temp;
                 }
+
             }
         }
         return array;
